@@ -51,6 +51,7 @@ class Rigidbody(GameObject):
 
 def start():
   s.clear()
+  s.set_rotation(90)
   for obj in gameObjects:
     obj.OnStart()
   
@@ -76,3 +77,4 @@ testObject = Rigidbody(size, size, green, True)
 while True:
   tick()
   time.sleep(tickrate)
+  
