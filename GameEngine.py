@@ -68,11 +68,12 @@ def render():
       s.set_pixel(obj.position.x, obj.position.y, obj.color)
 
 def tick():
-  start()
   update()
   render()
 
 testObject = Rigidbody(size, size, green, True)
+
+start()
 
 while True:
   tick()
